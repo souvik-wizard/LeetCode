@@ -10,9 +10,7 @@ def minMovesToSeat(seats, students):
                 if i!= j:
                     moves += abs(i-j)
             return moves
-
             
-        
 seats=[4,1,5,9]
 students=[1,3,2,6]
 
