@@ -3,6 +3,19 @@ from turtle import rt
 
 
 def prefix(strs):
+    s=""
+    for i in range (len(strs[0])):
+        for j in strs:
+            if i==len(j) or j[i]!=strs[0][i]:
+                return s
+        s+=strs[0][i]
+    return s
+
+
+# OR
+
+
+def prefix(strs):
     string=""
     index=0
     if len(strs)==0:
@@ -16,17 +29,6 @@ def prefix(strs):
         index+=1
     return string
 
-
-
-# OR
-def prefix(strs):
-    s=""
-    for i in range (len(strs[0])):
-        for j in strs:
-            if i==len(j) or j[i]!=strs[0][i]:
-                return s
-        s+=strs[0][i]
-    return s
 
 
 print(prefix(["flower","flow","flight"]))
