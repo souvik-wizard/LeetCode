@@ -1,3 +1,5 @@
+# A bit difficult to understand maybe
+
 import math
 def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
     # nums1=nums1+nums2        #Time complexity O(n logn)
@@ -14,3 +16,22 @@ def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
     else:
         mid=math.ceil(length//2)
         return nums1[mid]
+
+
+
+
+
+
+
+# Simple approach
+
+def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+    nums1.extend(nums2)
+    nums1.sort()
+    length = len(nums1)
+    mid1 = length // 2
+    if length % 2 == 1:
+        return nums1[mid1]
+    else:
+        mid2 = (length // 2) - 1
+        return (nums1[mid1] + nums1[mid2])/2
