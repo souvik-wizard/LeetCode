@@ -1,6 +1,7 @@
 import math
 def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-    nums1=nums1+nums2
+    # nums1=nums1+nums2        #Time complexity O(n logn)
+    nums1.extend(nums2)        #Time complexity O(n)
     nums1.sort()
     length=len(nums1)       
     if (length%2)==0:
