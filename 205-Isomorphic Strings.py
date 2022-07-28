@@ -26,14 +26,14 @@ class Solution:
                 shash[sch]=tch
             if tch not in thash:
                 thash[tch]=sch
-            if shash[sch]!=tch  or thash[tch]!=sch:
+            if shash[sch]!=tch or thash[tch]!=sch:
                 return False
         return True
 
 
 
 
-if __name__=="__main__":
-    s = "badc"
-    t = "baba"
-    print (isIsomorphic(s,t))
+    if __name__=="__main__":
+        s = "badc"
+        t = "baba"
+        print (isIsomorphic(s,t))
