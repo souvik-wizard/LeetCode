@@ -1,21 +1,21 @@
-# # O(n) tc but easy and understandable
+# O(n) tc but easy and understandable
 
-# class Solution:
-#     def numIdenticalPairs(nums):
-#             hash_dict={}
-#             res=0
-#             for i in range (len(nums)):
-#                 if nums[i] in hash_dict:
-#                     hash_dict[nums[i]].append(i)
-#                 else:
-#                     hash_dict[nums[i]]=[i]
+class Solution:
+    def numIdenticalPairs(nums):
+            hash_dict={}
+            res=0
+            for i in range (len(nums)):
+                if nums[i] in hash_dict:
+                    hash_dict[nums[i]].append(i)
+                else:
+                    hash_dict[nums[i]]=[i]
                     
-#             #Using n*(n-1)/2 formula
+            #Using n*(n-1)/2 formula
             
-#             for key,values in hash_dict.items():
-#                 if len(values) >= 2:
-#                     res+= len(values)*(len(values)-1)//2
-#             return res
+            for key,values in hash_dict.items():
+                if len(values) >= 2:
+                    res+= len(values)*(len(values)-1)//2
+            return res
                 
 
 #a bit weird O(n^2) but smart approach using question hints
@@ -24,11 +24,13 @@ class Solution:
     def numIdenticalPairs(nums):
             res = 0
 
-            for i in range(len(nums)):
+            for i in range (len(nums)):
+                # print ("when i is:",i)
                 for j in range(i+1, len(nums)):
+                    # print ("j is:",j)
                     if nums[j]==nums[i] and i<j:
                         res+=1
-
+                        # print("res out",res)
             return res               
 
     if __name__=="__main__":
