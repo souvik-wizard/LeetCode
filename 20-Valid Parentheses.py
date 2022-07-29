@@ -1,5 +1,5 @@
 def isValid(s):
-        if len(s)%2 != 0 :
+        if len(s)%2 != 0 :  
             return False
         hash={ '(':')' , '{':'}', '[':']'}
         stack=[]

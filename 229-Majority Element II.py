@@ -1,6 +1,5 @@
 # Not O(1) space but mine solution :)
-
-def majorityElement(self, nums: List[int]) -> List[int]:
+def majorityElement(nums):
         if len(nums)==1:
             return nums
         hash={}
@@ -17,9 +16,7 @@ def majorityElement(self, nums: List[int]) -> List[int]:
 
 
 # Another easy but O(1) space solution (learned)
-
 from typing import Counter
-
 def majorityElement(nums):
     l = len(nums)
 
