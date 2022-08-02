@@ -1,7 +1,6 @@
 # # Accepted ans (Using "Sieve of Eratosthenes" approach)
 # # TC will be O(n log(log n)) becaues of  "harmonic series"   theorm
 
-from math import sqrt
 
 def countPrimes(n):
     if n<=1:
@@ -9,7 +8,7 @@ def countPrimes(n):
     prime=[True]*n        
     prime[0]=False
     prime[1]=False        
-    for i in range(2,int(sqrt(n))+1):
+    for i in range(2,int(n**0.5)+1):
         if prime[i]:
             for j in range(i*i,n,i):
                 prime[j]=False
@@ -18,9 +17,8 @@ def countPrimes(n):
                     
 
 
-
-
 # Brute force  O(n^2)Thats y not accepted   :(
+
 def countPrimes(n):
     arr=[]
     for number in range (n):  
