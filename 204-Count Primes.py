@@ -1,14 +1,14 @@
 # # Accepted ans (Using "Sieve of Eratosthenes" approach)
 # # TC will be O(n log(log n)) becaues of  "harmonic series"   theorm
 
-
+import math
 def countPrimes(n):
     if n<=1:
         return 0
     prime=[True]*n        
     prime[0]=False
     prime[1]=False        
-    for i in range(2,int(n**0.5)+1):
+    for i in range(2,math.ceil(n**0.5)):
         if prime[i]:
             for j in range(i*i,n,i):
                 prime[j]=False
