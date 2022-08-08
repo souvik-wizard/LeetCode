@@ -16,17 +16,17 @@ class Solution:
 
 # Need to modify(not accepted)
 
-class Solution:
-    def mirrorReflection(self, p: int, q: int) -> int:
-        if p==q:return 1
-        i=math.log2(p)
-        if q+q==p or i==int(i):return 2  
-        if p%2==0:
-            if q%2!=0: return 2
-            if q%2==0: 
-                if p%q==0: return 2 
-            if q>p//2 and q%2==0: return 2
+# class Solution:
+#     def mirrorReflection(self, p: int, q: int) -> int:
+#         if p==q:return 1
+#         i=math.log2(p)
+#         if q+q==p or i==int(i):return 2  
+#         if p%2==0:
+#             if q%2!=0: return 2
+#             if q%2==0: 
+#                 if p%q==0: return 2 
+#             if q>p//2 and q%2==0: return 2
                
-        else:
-            if q%2 ==0:return 0
-            elif p%2 !=0: return 1
+#         else:
+#             if q%2 ==0:return 0
+#             elif p%2 !=0: return 1
