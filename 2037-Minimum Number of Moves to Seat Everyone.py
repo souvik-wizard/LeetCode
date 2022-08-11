@@ -1,6 +1,3 @@
-from pprint import pprint
-
-
 def minMovesToSeat(seats, students):
         seats.sort()
         students.sort()
