@@ -7,3 +7,14 @@ class Solution:
             if n==1:
                 return True            
         return False
+
+
+# Recursive Solution
+class Solution:
+    def isHappy(self, n: int) -> bool:
+        if n == 1 or n==7: return True
+        if len(str(n)) < 2: return False
+
+        st = sum(int(s)**2 for s in str(n)) 
+        if st == 1: return True
+        return self.isHappy(st)
