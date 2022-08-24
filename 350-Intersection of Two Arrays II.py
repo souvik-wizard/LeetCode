@@ -5,4 +5,4 @@ class Solution:
                     if i in nums2:
                         arr.append(i)
                         nums2.remove(i)
-                return arr
+                return arr  
