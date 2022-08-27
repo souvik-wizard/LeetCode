@@ -6,4 +6,5 @@ class Solution:
                 nums.pop(pointer)
             else:   
                 pointer+=1
+        # print(nums)
         return pointer
