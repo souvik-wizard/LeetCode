@@ -12,6 +12,14 @@ class Solution:
                 longest = max(longest, r-l)
             return longest
 
+# first if length is < 2 we simply  return the length of our given string.
+# then we simply check for that perticular character in s (where range of "s" is our left pointer to right )
+# if not in "s" (that means unique) we increase our right pointer to check the next character untill we get any duplicate value
+# if yes we increase our left pointer and perform the same operation
+# every time we'll update our "longest var" by compareing (maximum value) with right - left (r-l)
+# in the end we'll return our Longest Substring 
+
+
 # Another Sol(Learned)
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
