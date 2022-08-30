@@ -9,6 +9,6 @@ class Solution:
             elif(nums[i] == 1): one +=1
             elif(nums[i] == 2): two +=1
         s = "0"*zero + "1"*one + "2"*two
-        # print(s)
+        # print(s) --> 001122
         for i in range(len(s)):
             nums[i] = s[i]
