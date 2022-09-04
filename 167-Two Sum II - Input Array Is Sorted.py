@@ -10,4 +10,4 @@ class Solution:
                 low+=1
             else:
                 high-=1
-                
+                    
