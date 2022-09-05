@@ -13,6 +13,3 @@ class Solution:
             if c==1:
                 prime+=1
         return prime
-
-                
-            
