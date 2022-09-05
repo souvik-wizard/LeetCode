@@ -17,26 +17,26 @@ def countPrimes(n):
                     
 
 
-# Brute force  O(n^2)Thats y not accepted   :(
+# # Brute force  O(n^2)Thats y not accepted   :(
 
-def countPrimes(n):
-    arr=[]
-    for number in range (n):  
-        if number > 1:  
-            for i in range (2, number):  
-                if (number % i) == 0:  
-                    break  
-            else:  
-                arr.append(number)
-        else:
-            return 0
+# def countPrimes(n):
+#     arr=[]
+#     for number in range (n):  
+#         if number > 1:  
+#             for i in range (2, number):  
+#                 if (number % i) == 0:  
+#                     break  
+#             else:  
+#                 arr.append(number)
+#         else:
+#             return 0
 
-    return len(arr)
+#     return len(arr)
 
 
 
 
 
 if __name__=='__main__':
-    n=5
+    n=10000
     print(countPrimes(n))
