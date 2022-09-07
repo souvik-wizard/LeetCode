@@ -1,11 +1,11 @@
 # O(n) time O(1)space Efficient Sol
 class Solution:
     def findGCD(self, nums: List[int]) -> int:
-            max_int=max(nums)
-            min_int=min(nums)
+            mx=max(nums)
+            mn=min(nums)
             res=1
-            for i in range(1,min_int+1):
-                if  max_int%i==0 and  min_int%i==0:
+            for i in range(1,mn+1):
+                if  mx%i==0 and  mn%i==0:
                     res=i
             return res
 
