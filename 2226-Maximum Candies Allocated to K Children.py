@@ -11,6 +11,7 @@ class Solution:
             return low
 
 # Using biscet (one line sol)
+
 class Solution:
     def maximumCandies(self, C: List[int], k: int) -> int:
         return bisect_left(range(1,sum(C)//k+1), True, key=lambda x:sum(c//x for c in C)<k)
