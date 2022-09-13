@@ -22,7 +22,7 @@ class Solution:
      
      
 
-# Solution 2
+# Solution 2 Easy and beginner friendly
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
                 nums.sort()
