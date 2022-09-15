@@ -27,12 +27,12 @@ def pal(s):
 
     # Counter is similar to hash table value(number of times an item seen in str) and keys (the items itself) are there.
     c=Counter(s)
-    # print(c)
+    print(c)
     out=0
     for i in c.values():
-        # print(i)
+        print(i)
         out += int(i/2) * 2
-        print (out)
+        # print (out)
         if out % 2 == 0 and i%2==1:
             out+=1
     return out
