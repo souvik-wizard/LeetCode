@@ -11,7 +11,11 @@ class Solution:
 
 # 2 linear solutions
 # 1) 
-return [set(nums1)-set(nums2), set(nums2)-set(nums1)]
+class Solution:
+    def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
+            return [set(nums1)-set(nums2), set(nums2)-set(nums1)]
 # 2)
-return [[j for j in set(nums1) if j not in nums2],[i for i in set(nums2) if i not in nums1]]
+class Solution:
+    def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
+            return [[j for j in set(nums1) if j not in nums2],[i for i in set(nums2) if i not in nums1]]
 
