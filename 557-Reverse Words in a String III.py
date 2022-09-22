@@ -1,7 +1,7 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
         s= s[::-1]
-        s=s.split(" ")
+        s=s.split()
         l=len(s)-1
         for i in range(len(s)//2):
             temp=s[i]
