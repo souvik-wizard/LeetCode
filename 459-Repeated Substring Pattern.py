@@ -14,7 +14,6 @@ class Solution:
                 return False
 
 # Sol2
-
 # This solution is quite tricky
 # Because it somehow rotate the string and after that if any repeated substring exists 
 # then it will return the same string excluding the first and last character.
@@ -24,8 +23,20 @@ class Solution:
     def repeatedSubstringPattern(self, s: str) -> bool:
                 string=s[1:]+s[:-1]
                 return s in string
-
 # OR
 class Solution:
     def repeatedSubstringPattern(self, s: str) -> bool:
         return s in s[1:] + s[:-1]  
+
+
+# Sol 3
+class Solution:
+    def repeatedSubstringPattern(self, s: str) -> bool:
+            sub_s =''
+            l= len(s)
+            for i in range(l // 2):
+                sub_s  += s[i]
+                if l % len(sub_s )==0:
+                    if sub_s  * (l // len(sub_s ))== s:
+                                return True
+            return False
